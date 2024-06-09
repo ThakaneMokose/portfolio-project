@@ -3,6 +3,7 @@ font-family: "Poppins",sans-serif;*/
 :root{
     --brand-color:rgb(75, 0, 37);
     --main-background:rgba(75, 0, 31, 0.089);
+    --brand-muted: rgba(75, 0, 37, 0.65);
 }
 
 body{
@@ -54,6 +55,12 @@ h1{
 }
 .content {
     padding: 120px 20px;
+}
+.brand-color{
+    color: var(--brand-color)
+}
+a.brand-color:hover{
+    color:var(--brand-muted)
 }
 
 @media (max-width:768px) {
