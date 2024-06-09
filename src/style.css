@@ -59,9 +59,31 @@ h1{
 .brand-color{
     color: var(--brand-color)
 }
-a.brand-color:hover{
+.brand-background{
+    background-color: var(--main-background);
+}
+a.brand-color:hover, .email-link:hover{
     color:var(--brand-muted)
 }
+.email-link{
+    text-decoration: none;
+}
+div.brand-background{
+        padding: 50px 160px;
+}
+.social-links i{
+    margin: 0px 20px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size:18px;
+    background-color: var(--main-background);
+}
+.social-links i:hover{
+    background: var(--brand-color);
+    color: white;
+    transition:250ms ease-in-out;
+}
+
 
 @media (max-width:768px) {
     h1 {
@@ -84,5 +106,9 @@ a.brand-color:hover{
 
     .btn-branding {
         display: block;
+    }
+    footer{
+        background: var(--main-background);
+        padding-top: 50px;
     }
 }
